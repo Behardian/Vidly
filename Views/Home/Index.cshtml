@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Vidly</h1>
+    <p class="lead">
+        DVD Rental Service
+    </p>
+   
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Create your own Vidly account and start renting your favourite movies in minutes!
+        </p>
+     
+        <p>@Html.ActionLink("Create an Account", "Register", "Account", null, new { @class = "btn btn-primary" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get movies!</h2>
+        <p>
+            All the best movies, TV shows and documentaries at your fingertips
+        </p>
+        <p>@Html.ActionLink("Rent Movies", "New", "Rentals", null, new { @class = "btn btn-primary" } )</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Locations</h2>
+        <p>
+            You can return your rented DVD's to any of our stores. Handy!
+        </p>
+        <p>@Html.ActionLink("Stores", "Contact", "Home", null, new { @class = "btn btn-primary" })</p>
+    </div>
+</div>
